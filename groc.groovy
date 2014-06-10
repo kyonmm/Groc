@@ -209,7 +209,7 @@ def createGroc(File source, File output, String returningPath){
                 }
                 if(code[1].size()>0){
                   td("class":"codes"){
-                    pre("class":"brush: ${extension}; gutter: false; toolbar: false;"){
+                    pre("class":"brush: ${extension == "gradle" ? "groovy" : extension}; gutter: false; toolbar: false;"){
                       mkp.yield(code[1])
                     }
                   }
